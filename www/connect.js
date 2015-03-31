@@ -17,7 +17,6 @@ document.getElementById('go').onclick = function () {
       },
       function (code, errorprops, params) {
         document.getElementById('connectResponse').innerHTML = "<p background-color:red;>" + errorprops.message + "</p>";
-        document.getElementById('connectResponse').innerHTML = "<p>" + errorprops.message + "</p>";
       }
   );
 };
