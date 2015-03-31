@@ -24,6 +24,7 @@ module.exports = function (grunt) {
       app: 'www',
       url: '',
       default_local_server_url: 'http://localhost:8001'
+//      default_local_server_url: 'https://support-zosghmoibiuagq4nhmgqqejy-dev.ac.gen.ric.feedhenry.com/connect'
     },
 
     // Watches files for changes and runs tasks based on the changed files
