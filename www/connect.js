@@ -1,5 +1,5 @@
 document.getElementById('go').onclick = function () {
-  document.getElementById('connectResponse').innerHTML = "<p>Connecting.....</p>";
+  document.getElementById('connectResponse').innerHTML = "<p style=background-color:red>Connecting.....</p>";
   $fh.cloud(
       {
         path: 'connect',
