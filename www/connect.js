@@ -3,6 +3,7 @@ document.getElementById('go').onclick = function () {
   $fh.cloud(
       {
         path: 'connect',
+        method: "GET",
         data: {
           host: document.getElementById('host').value,
           port: document.getElementById('port').value,
