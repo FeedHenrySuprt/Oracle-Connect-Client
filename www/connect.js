@@ -1,4 +1,5 @@
 document.getElementById('go').onclick = function () {
+  // Connect to Iracle instance using the on screen parameters.
   document.getElementById('connectResponse').innerHTML = "<p style=background-color:white>Connecting.....</p>";
   $fh.cloud(
       {
