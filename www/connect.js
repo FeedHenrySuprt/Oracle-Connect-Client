@@ -13,7 +13,7 @@ document.getElementById('go').onclick = function () {
         }
       },
       function (res) {
-        document.getElementById('connectResponse').innerHTML = "<p>" + res.msg + "</p>";
+        document.getElementById('connectResponse').innerHTML = "<p style='color:green'>" + res.msg + "</p>";
       },
       function (code, errorprops, params) {
         document.getElementById('connectResponse').innerHTML = "<p style='color:red'>" + errorprops.message + "</p>";
