@@ -16,7 +16,9 @@ document.getElementById('go').onclick = function () {
         document.getElementById('connectResponse').innerHTML = "<p>" + res.msg + "</p>";
       },
       function (code, errorprops, params) {
-        alert('An error occured: ' + code + ' : ' + errorprops);
+        document.getElementById('connectResponse').innerHTML = "<p>Unable to connect</p>";
+
+//        alert('An error occured: ' + code + ' : ' + errorprops);
       }
   );
 };
