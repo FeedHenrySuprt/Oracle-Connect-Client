@@ -1,5 +1,5 @@
 document.getElementById('go').onclick = function () {
-  document.getElementById('connectResponse').innerHTML = "<p style=background-color:red>Connecting.....</p>";
+  document.getElementById('connectResponse').innerHTML = "<p style=background-color:white>Connecting.....</p>";
   $fh.cloud(
       {
         path: 'connect',
@@ -13,10 +13,10 @@ document.getElementById('go').onclick = function () {
         }
       },
       function (res) {
-        document.getElementById('connectResponse').innerHTML = "<p>" + res.msg + "</p>";
+        document.getElementById('connectResponse').innerHTML = "<p style=background-color:green>" + res.msg + "</p>";
       },
       function (code, errorprops, params) {
-        document.getElementById('connectResponse').innerHTML = "<p>" + errorprops.message + "</p>";
+        document.getElementById('connectResponse').innerHTML = "<p style=background-color:red>" + errorprops.message + "</p>";
       }
   );
 };
